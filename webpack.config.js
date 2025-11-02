@@ -2,7 +2,8 @@ const { shareAll, withModuleFederationPlugin } = require('@angular-architects/mo
 
 module.exports = withModuleFederationPlugin({
 
-  name: 'companyModule.js',
+  name: 'company',
+  filename: 'remoteEntry.js',
 
   exposes: {
     './Component': './src/app/app.component.ts',
